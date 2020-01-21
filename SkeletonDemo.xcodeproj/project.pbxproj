@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		9E1F171023CF4D8C00CAD9A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1F170E23CF4D8C00CAD9A4 /* Main.storyboard */; };
 		9E1F171223CF4D8F00CAD9A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E1F171123CF4D8F00CAD9A4 /* Assets.xcassets */; };
 		9E1F171523CF4D8F00CAD9A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1F171323CF4D8F00CAD9A4 /* LaunchScreen.storyboard */; };
+		9E1F171E23CF4DE400CAD9A4 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 9E1F171D23CF4DE400CAD9A4 /* SkeletonView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E1F171E23CF4DE400CAD9A4 /* SkeletonView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SkeletonDemo;
+			packageProductDependencies = (
+				9E1F171D23CF4DE400CAD9A4 /* SkeletonView */,
+			);
 			productName = SkeletonDemo;
 			productReference = 9E1F170523CF4D8C00CAD9A4 /* SkeletonDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 9E1F16FC23CF4D8C00CAD9A4;
+			packageReferences = (
+				9E1F171C23CF4DE400CAD9A4 /* XCRemoteSwiftPackageReference "SkeletonView" */,
+			);
 			productRefGroup = 9E1F170623CF4D8C00CAD9A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -336,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E1F171C23CF4DE400CAD9A4 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E1F171D23CF4DE400CAD9A4 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E1F171C23CF4DE400CAD9A4 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9E1F16FD23CF4D8C00CAD9A4 /* Project object */;
 }
